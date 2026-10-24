@@ -1,17 +1,17 @@
 JetSon Orin nano 8G demo
 
 
-OllamaƒT[ƒo[
+Ollamaã‚µãƒ¼ãƒãƒ¼
 
 sudo docker run -d --network=host -v ${HOME}/open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 
 
-OllamaƒoƒbƒNƒGƒ“ƒh
+Ollamaãƒãƒƒã‚¯ã‚¨ãƒ³ãƒ‰
 
 jetson-containers run --name ollama $(autotag ollama)
 
 
-Webƒuƒ‰ƒEƒU‚©‚çƒAƒNƒZƒX‚·‚é
+Webãƒ–ãƒ©ã‚¦ã‚¶ã‹ã‚‰ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹
 
 http://<IP_ADDR>:8080
 
@@ -20,16 +20,16 @@ http://<IP_ADDR>:8080
 
 NanoOWL 
 
-ƒRƒ“ƒeƒi‹N“®
+ã‚³ãƒ³ãƒ†ãƒŠèµ·å‹•
 jetson-containers run --workdir /opt/nanoowl $(autotag nanoowl)
 
-ƒrƒfƒIŠm”F
+ãƒ“ãƒ‡ã‚ªç¢ºèª
 ls /dev/video*
 
-’Ç‰Áƒ‚ƒWƒ…[ƒ‹
+è¿½åŠ ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«
 pip3 install --isolated aiohttp
 
-Às
+å®Ÿè¡Œ
 cd examples/tree_demo
 python3 tree_demo.py --camera 0 --resolution 640x480 ../../data/owl_image_encoder_patch32.engine
 
@@ -37,10 +37,10 @@ python3 tree_demo.py --camera 0 --resolution 640x480 ../../data/owl_image_encode
 
 LLM gemma3
 
-ƒRƒ“ƒeƒiÀs
+ã‚³ãƒ³ãƒ†ãƒŠå®Ÿè¡Œ
 jetson-containers run --name ollama $(autotag ollama)
 
-LLM‹N“®
+LLMèµ·å‹•
 ollama run gemma3
 
 
