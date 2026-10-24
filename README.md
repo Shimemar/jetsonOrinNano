@@ -1,4 +1,4 @@
-# jetbot_memo
+# Jetson Orin nano super
 <img src="PXL_20260926_124414213.jpg" width="400" alt="jetbot">
 
 
